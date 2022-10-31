@@ -1,3 +1,3 @@
 # first
 
-[here`s text](image.jpg)
+![here`s text](image.png)
