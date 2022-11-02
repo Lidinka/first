@@ -2,4 +2,4 @@
 
 *слово*
 
-![here`s text](image.png)
+[example](https://lidinka.github.io/first/)
