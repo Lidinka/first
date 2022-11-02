@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>lab2</title>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	<body> 
+		<header>
+            <div id="header_title">MICKZLE`S PRODUCT</div>
+			<div id="header_additional_title">labouratory work №2</div>
+		</header>
+		<div class="first_part">
+			<div class="left_part">
+            	<img src="C:\Users\mickle\Desktop\WEB\images\lab2\first.jpg" class="picture1">
+				<p style="margin-top: -2px;">
+					<b>Я просто вставив довільний текст задля того аби довго не шукати інформацію 🙃</b><br> HTML (англ. HyperText Markup Language — мова розмітки гіпертексту) — 
+					стандартизована мова розмітки документів для перегляду веб-сторінок у браузері. Веб-браузери отримують HTML документ від сервера за протоколами
+					HTTP/HTTPS або відкривають з локального диска, далі інтерпретують код в інтерфейс, який відображатиметься на екрані монітора. Елементи HTML є 
+					будівельними блоками сторінок HTML.
+				<img src="C:\Users\mickle\Desktop\WEB\images\lab2\second.jpg" class="picture2">
+				 	За допомогою конструкцій HTML, зображення та інші об'єкти, такі як інтерактивні форми, можуть бути вбудовані
+					у візуалізовану сторінку. HTML надає засоби для створення структурованих документів, позначаючи структурну семантику тексту, наприклад заголовки,
+					абзаци, списки, посилання, цитати та інші елементи. Елементи HTML окреслені тегами, написаними з використанням кутових дужок. Теги на кшталт
+					&ltimg&gt чи &ltinput&gt безпосередньо виводять вміст на сторінку. Інші теги, такі як &ltp&gt, оточують текст і надають інформацію
+					про нього, а також можуть включати інші теги як піделементи. Браузери не показують теги HTML, але використовують їх для інтерпретації вмісту сторінки.
+					<b> (Далі показано приклад зображення, яке не обтікає текст)</b>
+				</p>
+				<div style="text-align: center;"><img src="C:\Users\mickle\Desktop\WEB\images\lab2\third.jpg" class="picture3"></div>
+				<p style="margin-top: -2px;">
+				В HTML можна вбудовувати програми, написані на скриптових мовах, наприклад JavaScript, які впливають на поведінку та вміст вебсторінок. Включення 
+					CSS визначає вигляд і компонування вмісту. World Wide Web Consortium (W3C), який супроводжує стандарти HTML та CSS, заохочує використання CSS над 
+					явним презентаційним HTML з 1997 року.
+				</p>
+			</div>
+			<div class="right_part">
+				<div class="z1"><img src="C:\Users\mickle\Desktop\WEB\images\logo.jpg" style="width: 300px;"></div>
+				<div class="z2"><img src="C:\Users\mickle\Desktop\WEB\images\logo.jpg" style="width: 300px;"></div>
+				<div class="z3"><img src="C:\Users\mickle\Desktop\WEB\images\logo.jpg" style="width: 300px;"></div>
+			</div>
+		</div>
+		<section style="clear: both; position: relative;">
+			<div class="second_part">
+				<!-- <nav style="text-align: center; padding-bottom: 20px;"> -->
+				<nav style="text-align: center;">
+                	<ul>
+                    	<li><a href="index.html#registration" class="navigation">Форма реєстрації</a></li>
+                    	<li><a href="index.html#enroll" class="navigation">Форма входу</a></li>
+                    	<li><a href="index.html#feedback" class="navigation">Форма зворотнього зв'язку</a></li>
+                	</ul>
+				</nav>
+				
+				<div style="text-align: center; margin-bottom: 40px;" id="registration">
+					<form class="regs_form">
+					<div style="float: left; width: 50%;"> <!-- added-->
+						<div style="text-align: center;">
+							<h2>Форма реєстрації</h2>
+							<img src="C:\Users\mickle\Desktop\WEB\images\lab2\icon.png" class="reg_icon">
+						  </div>
+						<div class="registers">
+							<label for="name1" class="reg_label">Name</label><input class="reg_inside" type="text" name="name1" id="name1" placeholder="name" autocomplete="on" required>
+						</div>
+						<div class="registers">
+							<label for="surname" class="reg_label">Surname</label><input class="reg_inside" type="text" name="surname" id="surname" placeholder="surname" autocomplete="on" required>
+						</div>
+						<div class="registers" style="margin-left: 30px;">
+							<input type="radio" name="sex" id="radio1" style="margin-bottom: 25px;"><label for="radio1" class="reg_label">Man</label>
+							<input type="radio" name="sex" id="radio2" style="margin-bottom: 25px;"><label for="radio2" class="reg_label">Woman</label>
+						</div>
+						<div class="registers">
+							<label for="age" class="reg_label">Age</label><input class="reg_inside" type="number" name="age" id="age" min="12" max="99" value="18" placeholder="age" required>
+						</div>
+						<div class="registers">
+							<button class="reg_submit_button" type="submit" name="submit1" id="submit1"><label for="submit1" class="reg_label reg_submit_label">Зареєструватися</label></button>
+						</div>	
+					</div>
+					<div style="float: left; width: 50%; margin-top: 10px;">
+						<div class="registers">
+							<label for="birth" class="reg_label">Date of birth</label><input class="reg_inside" type="date" name="birth" id="birth" min="1950-01-01" max="2010-01-01" value="2000-01-01" required>
+						</div>
+						<div class="registers">
+							<label for="country" class="reg_label">Country</label><input class="reg_inside" list="countries" name="country" id="country" required>
+							<datalist id="countries">
+								<option value="Ukraine">
+								<option value="Engalnd">
+								<option value="United States">
+								<option value="North Korea">
+							</datalist>
+						</div>
+						<div class="registers">
+							<label for="tel" class="reg_label">Phone number</label><input class="reg_inside" type="tel" name="tel" id="tel" pattern="+380-[0-9]{3}-[0-9]{4}" maxlength="7" placeholder="(+380)-XXX-XXXX" autocomplete="on" required>
+						</div>
+						<div class="registers">
+							<label for="social" class="reg_label">Social media</label><input class="reg_inside" type="url" name="social" id="social" placeholder="www.telegram.com" required>
+						</div>
+						<div class="registers">
+							<label for="email1" class="reg_label">Email adress</label><input class="reg_inside" type="email" name="email1" id="email1" placeholder="login" pattern="[a-z0-9._-]+@[a-z.-]+\.[a-z]{2,}$" autocomplete="on" required>
+					  	</div>
+					  	<div class="registers">
+							<label for="password1" class="reg_label">Password</label>  <!-- rewiev --><input class="reg_inside" type="password" name="password1" id="password1" minlength="6" placeholder="password" pattern="[@#-_\]{1}" required>
+					  	</div>
+						<div class="registers">
+							<input class="reg_check" type="checkbox" name="check" id="check" required><label for="check" class="reg_accept_label reg_label">Accept terms of use</label>
+						</div>	
+						<div class="registers">
+							<button class="reg_reset_button" type="reset" name="reset" id="reset"><label for="reset" class="reg_label">Відміна</label></button>
+						</div>
+					</div>
+					</form>
+				</div>
+
+
+				<div style="text-align: center;  margin-bottom: 40px;" id="enroll">
+					<form class="enroll_form">
+						<h2>Форма входу</h2>
+						<div class="enrolls">
+						  <input class="enroll_inside" type="email"  name="email2" id="email2" placeholder="login" pattern="[a-z0-9._-]+@[a-z.-]+\.[a-z]{2,}$" required>
+						</div>
+						<div class="enrolls">
+						  <input class="enroll_inside" type="password"  name="password2" id="password2" minlength="6" placeholder="password" required>
+						</div>
+						<div class="enrolls">
+						  <button class="enroll_enter" type="submit" name="submit2" id="submit2">вхід</button>
+						</div>
+					</form>
+				</div>
+
+				<div id="feedback">
+					<form class="feedback_form">
+						<h2>Форма зворотнього зв'язку</h2>
+						<div style="float: left; text-align: center;">
+							<div class="feedbacks">
+								<input class="feedback_inside" type="text"  name="name2" id="name2" placeholder="name"  autocomplete="on" required>
+							</div>
+							<div class="feedbacks">
+								<input class="feedback_inside" type="email" name="email3" id="email3" placeholder="email" pattern="[a-z0-9._-]+@[a-z.-]+\.[a-z]{2,}$" autocomplete="on" required>
+							</div>
+							<div class="feedbacks">
+								<input class="feedback_inside" list="feedbacks" name="feedback" id="feedback" placeholder="choose a reason" required>
+									<datalist id="feedbacks">
+									<option value="order a service">
+									<option value="request additional info">
+									<option value="offer a cooperation">
+									<option value="report a bug">
+								</datalist>
+							</div>
+						</div>
+						<textarea id="w3mission" rows="11" cols="40" wrap="soft" placeholder="Enter your message here"></textarea>
+						<div style="display: block;">
+							<div class="feedbacks" style="clear: both; align-items: center;">
+								<button class="feedback_enter" type="submit" name="submit3" id="submit3">надіслати</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer_links">
+				<div class="footer_text">Contact me:</div>
+				<a href="https://github.com/mickzle?tab=repositories"><img src="C:\Users\mickle\Desktop\WEB\images\git_Logo.png" class="footer_logo"></a>
+				<a href="mailto:kalinin.yaroslav@lll.kpi.ua">         <img src="C:\Users\mickle\Desktop\WEB\images\mail_Logo.png" class="footer_logo"></a>
+				<a href="https://www.instagram.com/yaroslav.kalinin_/"><img src="C:\Users\mickle\Desktop\WEB\images\inst_Logo.png" class="footer_logo"></a>
+				<a href="https://t.me/mickzle">                        <img src="C:\Users\mickle\Desktop\WEB\images\tg_Logo.png" class="footer_logo"></a>
+			</div>
+			<div class="footer_copyright">
+				Made by Yaroslav Kalinin<br>
+				with a little suffering
+			</div>
+		</footer>
+	</body>
+</html>
